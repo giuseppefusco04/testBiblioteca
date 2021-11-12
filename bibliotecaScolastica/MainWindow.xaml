@@ -21,5 +21,7 @@
         <Label Content="num pag" HorizontalAlignment="Left" Margin="19,318,0,0" VerticalAlignment="Top" Width="64"/>
         <Button x:Name="btn_aggiungi" Content="aggiungi" HorizontalAlignment="Left" Margin="264,344,0,0" VerticalAlignment="Top" Width="72" Click="btn_aggiungi_Click"/>
         <Button x:Name="btn_cercaLibroTitolo" Content="cerca libro per titolo" HorizontalAlignment="Left" Margin="251,129,0,0" VerticalAlignment="Top" Width="149" Click="btn_cercaLibroTitolo_Click"/>
+        <Button x:Name="btn_cercaLibriAutore" Content="Cerca libri per autore" HorizontalAlignment="Left" Margin="251,79,0,0" VerticalAlignment="Top" Width="149" Click="btn_cercaLibriAutore_Click"/>
+        <ListBox x:Name="lbx_libriAutore" Margin="431,25,22,70"/>
     </Grid>
 </Window>

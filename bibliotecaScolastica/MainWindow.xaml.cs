@@ -47,9 +47,27 @@ namespace bibliotecaScolastica
         {
             try
             {
-                b.RicercaLibroTitolo(txt_titolo.Text);
+                Libro l=b.RicercaLibroTitolo(txt_titolo.Text);
+                MessageBox.Show(l.ToString());
             }
             catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn_cercaLibriAutore_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                List<Libro> libri = new List<Libro>();
+                libri= b.RicercaLibroAutore(txt_autore.Text);
+                foreach(Libro l in libri)
+                {
+                    lbx_libriAutore.Items.Add(l);
+                }
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
