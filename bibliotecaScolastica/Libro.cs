@@ -22,6 +22,31 @@ namespace bibliotecaScolastica
             Editore = editore;
             nPagine = npag;
         }
+        /*readingTime che restituisce un tempo di lettura pari a 1h se le pagine sono inferiori a 100, un valore pari
+        a 2h se le pagine sono comprese tra 100 e 200 e un tempo superiore alle 2h se le pagine sono in
+quantitativo superiore a 200.*/
+        public int ReadingTime(int npg)
+        {
+            int readingTime=0;
+            if (npg < 100)
+            {
+                readingTime = 1;
+            }
+            else if (npg >= 100 && npg <= 200)
+            {
+                readingTime = 2;
+            }
+            else if (npg > 200)
+            {
+                Random r = new Random();
+                readingTime = r.Next(2, 4);
+            }
+            return readingTime;
+        }
+        public override string ToString()
+        {
+            return Autore + "" + Titolo + "" + AnnoPubblicazione + "" + Editore + "" + nPagine;
+        }
 
     }
 }
