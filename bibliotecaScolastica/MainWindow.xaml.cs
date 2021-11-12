@@ -20,9 +20,11 @@ namespace bibliotecaScolastica
     /// </summary>
     public partial class MainWindow : Window
     {
+        Biblioteca b;
         public MainWindow()
         {
             InitializeComponent();
+            txt_nLibri.Text = b.GetLibri().count;
         }
     }
 }
