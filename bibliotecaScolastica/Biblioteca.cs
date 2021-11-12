@@ -28,6 +28,17 @@ elencate.
         {
             _libri.Add(l);
         }
-
+        public Libro RicercaLibroTitolo(string titolo)
+        {
+            Libro libro;
+            foreach(LIbro l in _libri)
+            {
+                if (titolo == l.Titolo)
+                {
+                    libro=l;
+                }
+            }
+            return libro;
+        }
     }
 }
