@@ -42,5 +42,17 @@ namespace bibliotecaScolastica
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btn_cercaLibroTitolo_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                b.RicercaLibroTitolo(txt_titolo.Text);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
