@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <TextBox x:Name="txt_nLibri" HorizontalAlignment="Left" Margin="28,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" IsEnabled="False"/>
+        <Label Content="n libri totali" HorizontalAlignment="Left" Margin="96,20,0,0" VerticalAlignment="Top" Height="27"/>
     </Grid>
 </Window>
