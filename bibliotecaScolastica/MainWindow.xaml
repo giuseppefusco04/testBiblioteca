@@ -19,5 +19,6 @@
         <Label Content="Annata" HorizontalAlignment="Left" Margin="22,185,0,0" VerticalAlignment="Top" Width="52"/>
         <Label Content="Editore" HorizontalAlignment="Left" Margin="22,248,0,0" VerticalAlignment="Top" Width="52"/>
         <Label Content="num pag" HorizontalAlignment="Left" Margin="19,318,0,0" VerticalAlignment="Top" Width="64"/>
+        <Button x:Name="btn_aggiungi" Content="aggiungi" HorizontalAlignment="Left" Margin="264,344,0,0" VerticalAlignment="Top" Width="72" Click="btn_aggiungi_Click"/>
     </Grid>
 </Window>

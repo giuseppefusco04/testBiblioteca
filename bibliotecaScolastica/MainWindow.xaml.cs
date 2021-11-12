@@ -26,5 +26,21 @@ namespace bibliotecaScolastica
             InitializeComponent();
             txt_nLibri.Text = b.GetLibri().count;
         }
+
+        private void btn_aggiungi_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string autore = txt_autore.Text;
+                string titolo = txt_titolo.Text;
+                string annoPub = txt_annoPubb.Text;
+                string editore = txt_editore.Text;
+                int numPag = int.Parse(txt_numPag.Text);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
