@@ -9,5 +9,17 @@
     <Grid>
         <TextBox x:Name="txt_nLibri" HorizontalAlignment="Left" Margin="28,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" IsEnabled="False"/>
         <Label Content="n libri totali" HorizontalAlignment="Left" Margin="96,20,0,0" VerticalAlignment="Top" Height="27"/>
+        <TextBox x:Name="txt_autore" HorizontalAlignment="Left" Margin="96,81,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_editore" HorizontalAlignment="Left" Margin="96,256,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_annoPubb" HorizontalAlignment="Left" Margin="96,189,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_titolo" HorizontalAlignment="Left" Margin="96,129,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_numPag" HorizontalAlignment="Left" Margin="96,322,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Autore" HorizontalAlignment="Left" Margin="19,74,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Titolo" HorizontalAlignment="Left" Margin="19,125,0,0" VerticalAlignment="Top" Width="55"/>
+        <Label Content="Annata" HorizontalAlignment="Left" Margin="22,185,0,0" VerticalAlignment="Top" Width="52"/>
+        <Label Content="Editore" HorizontalAlignment="Left" Margin="22,248,0,0" VerticalAlignment="Top" Width="52"/>
+        <Label Content="num pag" HorizontalAlignment="Left" Margin="19,318,0,0" VerticalAlignment="Top" Width="64"/>
+        <Button x:Name="btn_aggiungi" Content="aggiungi" HorizontalAlignment="Left" Margin="264,344,0,0" VerticalAlignment="Top" Width="72" Click="btn_aggiungi_Click"/>
+        <Button x:Name="btn_cercaLibroTitolo" Content="cerca libro con titolo" HorizontalAlignment="Left" Margin="253,129,0,0" VerticalAlignment="Top" Width="175" Click="btn_cercaLibroTitolo_Click"/>
     </Grid>
 </Window>

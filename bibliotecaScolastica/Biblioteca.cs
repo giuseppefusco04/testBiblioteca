@@ -44,7 +44,7 @@ elencate.
             }
             return libro;
         }
-        public List<Libro> RicercaLibroTitolo(string autore)
+        public List<Libro> RicercaLibroAutore(string autore)
         {
             List<Libro> libriAutore = new List<Libro>();
             foreach (LIbro l in _libri)
