@@ -40,5 +40,17 @@ elencate.
             }
             return libro;
         }
+        public List<Libro> RicercaLibroTitolo(string autore)
+        {
+            List<Libro> libriAutore = new List<Libro>();
+            foreach (LIbro l in _libri)
+            {
+                if (autore == l.autore)
+                {
+                    libriAutore.Add(l);
+                }
+            }
+            return libriAutore;
+        }
     }
 }
