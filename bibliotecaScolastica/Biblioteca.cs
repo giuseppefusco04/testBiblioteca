@@ -24,6 +24,10 @@ elencate.
             OrarioChiusura = oc;
             _libri = new List<Libro>();
         }
+        public List<Libro> GetLibri()
+        {
+            return List < Libro > _libri;
+        }
         public void AggiungiLibro(Libro l)
         {
             _libri.Add(l);
